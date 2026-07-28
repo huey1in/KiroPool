@@ -44,8 +44,8 @@ impl Default for AppConfig {
     fn default() -> Self {
         Self {
             api: ApiConfig {
-                default_api_url: "http://127.0.0.1:8080/api".to_string(),
-                config_file_url: "http://127.0.0.1:8080/api/inbound/config".to_string(),
+                default_api_url: "https://app.kirofree.com/api".to_string(),
+                config_file_url: "https://app.kirofree.com/api/inbound/config".to_string(),
                 public_endpoints: vec![
                     "/login".to_string(),
                     "/register".to_string(),
@@ -91,7 +91,7 @@ pub fn get_default_api_url() -> String {
 
 pub fn get_auth_api_url() -> String {
     env::var("KIROPOOL_AUTH_API_URL")
-        .unwrap_or_else(|_| "http://127.0.0.1:8080/api".to_string())
+        .unwrap_or_else(|_| "https://app.kirofree.com/api".to_string())
         .trim_end_matches('/')
         .to_string()
 }
