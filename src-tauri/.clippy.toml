@@ -1,0 +1,20 @@
+# 函数参数数量阈值
+too-many-arguments-threshold = 8
+
+# 函数行数阈值
+too-many-lines-threshold = 150
+
+# 大数字使用下划线分隔的阈值
+literal-representation-threshold = 16
+
+# 认知复杂度阈值
+cognitive-complexity-threshold = 25
+
+# 类型复杂度阈值
+type-complexity-threshold = 250
+
+# vec的容量阈值
+vec-box-size-threshold = 4000
+
+# 大枚举变体大小阈值
+enum-variant-size-threshold = 200

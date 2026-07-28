@@ -1,0 +1,42 @@
+{
+  "nextDateReset": "2026-08-01T00:00:00Z",
+  "userInfo": {
+    "email": "healthy@example.com",
+    "userId": "kiro-user-id"
+  },
+  "subscriptionInfo": {
+    "subscriptionTitle": "KIRO PRO+",
+    "subscriptionType": "Q_DEVELOPER_STANDALONE_PRO_PLUS"
+  },
+  "usageBreakdownList": [
+    {
+      "resourceType": "CREDIT",
+      "displayName": "Credit",
+      "currentUsageWithPrecision": 20,
+      "usageLimitWithPrecision": 100,
+      "freeTrialInfo": {
+        "freeTrialStatus": "ACTIVE",
+        "currentUsageWithPrecision": 5,
+        "usageLimitWithPrecision": 25,
+        "freeTrialExpiry": "2026-08-15T00:00:00Z"
+      },
+      "bonuses": [
+        {
+          "bonusCode": "ACTIVE_BONUS",
+          "displayName": "Active bonus",
+          "status": "ACTIVE",
+          "currentUsageWithPrecision": 2.5,
+          "usageLimitWithPrecision": 25,
+          "expiresAt": "2026-08-20T00:00:00Z"
+        },
+        {
+          "bonusCode": "EXPIRED_BONUS",
+          "displayName": "Expired bonus",
+          "status": "EXPIRED",
+          "currentUsageWithPrecision": 50,
+          "usageLimitWithPrecision": 50
+        }
+      ]
+    }
+  ]
+}

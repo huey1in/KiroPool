@@ -1,0 +1,13 @@
+/* Basic styles that can't be easily replaced with UnoCSS */
+html,
+body {
+  @apply m-0 p-0 h-full font-mono;
+}
+
+#app {
+  @apply h-full;
+}
+
+.n-layout-scroll-container {
+  @apply min-h-full;
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-capability",
+  "description": "Capability for the main window",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:window:default",
+    "core:window:allow-minimize",
+    "core:window:allow-maximize",
+    "core:window:allow-close",
+    "core:window:allow-create",
+    "core:window:allow-hide",
+    "core:window:allow-show",
+    "core:window:allow-unminimize",
+    "core:window:allow-set-focus",
+    "core:window:allow-set-always-on-top",
+    "core:window:allow-start-dragging",
+    "core:menu:default",
+    "core:menu:allow-new",
+    "core:tray:default",
+    "core:tray:allow-new",
+    "core:image:default",
+    "core:image:allow-from-path",
+    "core:event:default",
+    "core:event:allow-listen",
+    "os:default",
+    "shell:default",
+    "positioner:default",
+    "dialog:default",
+    "process:default",
+    "updater:default",
+    "macos-permissions:default",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "open-url-mac",
+          "cmd": "open",
+          "args": true
+        },
+        {
+          "name": "open-url-linux",
+          "cmd": "xdg-open",
+          "args": true
+        },
+        {
+          "name": "open-url-windows",
+          "cmd": "start",
+          "args": true
+        },
+        {
+          "name": "exec-sh",
+          "cmd": "sh",
+          "args": [
+            "-c",
+            {
+              "validator": "\\S+"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
