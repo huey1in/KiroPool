@@ -1,6 +1,6 @@
 [package]
 name = "kiro-pool"
-version = "1.8.13"
+version = "1.8.14"
 description = "Kiro Pool App"
 authors = ["Cloxl", "Sanyela", "huey1in"]
 edition = "2021"
