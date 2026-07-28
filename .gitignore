@@ -39,7 +39,7 @@ node_modules/.pnpm
 DEBUG.md
 
 # Private backend source and API schema
-auth-server/
+backserver/
 swagger.json
 
 # ESLint and Prettier cache files
